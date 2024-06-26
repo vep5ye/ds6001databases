@@ -92,3 +92,5 @@ to remove the extra volumes and networks Docker had built and free up that space
 ## Troubleshooting
 
 * If `db_tests.ipynb` returns errors, it may be because you have an older, local installation of MySQL, PostgreSQL, or MongoDB running on your computer. Find these local installations and uninstall them (unless you have important data stored there)
+
+* If you are seeing authentication errors when running the cells in `db_tests.ipynb`, it may be because you've changed your passwords. Passwords are cached in the attached volumes, so open the Docker Desktop client, click on Volumes, and delete the volumes attached to MySQL, PostgreSQL, and Mongo. Then retry `docker compose up`.
