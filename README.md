@@ -77,11 +77,17 @@ Then type
 ```
 docker compose up
 ```
-If successful, you will see a large amount of output from JupyterLab, MySQL, PostgreSQL, and Mongo. If you see a "docker daemon" error, then double-check that the Docker desktop client is running.
+If successful, you will see a large amount of output from MySQL, PostgreSQL, and Mongo. If you see a "docker daemon" error, then double-check that the Docker desktop client is running.
 
-**Step 4**: Scroll through the output until you see the phrase `Or copy and paste one of these URLs:` Find the URL that begins `http://127.0.0.1:8888/lab?token=`. Either click on it (if it is a hyperlink), or copy the whole thing (including the numbers/letters after the equal sign) and paste it into a web browser. This step will launch JupyterLab on your computer. This version of JupyterLab is the one running inside the Docker container with all software previously installed.
+**Step 4**: Work within JupyterLab, VS Code, or another Python IDE as you would do normally.
 
-**Step 5**: Work within JupyterLab, VS Code, or another Python IDE as you would do normally.
+**Step 5**: When using `mysql.connector`, `psycopg`, `pymongo`, or `sqlalchemy` to connect to one of the running database systems, use `localhost` for the host name, and use the following usernames, passwords, and ports for accessing the DB server:
+
+* For MySQL, the user should be `root`, the password should be your environmental variable named `MYSQL_ROOT_PASSWORD`, and the port should be 3306.
+
+* For PostgreSQL, the user should be `postgres`, the password should be your environmental variable named `POSTGRES_PASSWORD`, and the port should be 5432.
+
+* For MongoDB, the user should be your environmental variable `MONGO_INITDB_ROOT_USERNAME`, the password should be your environmental variable named `MONGO_INITDB_ROOT_PASSWORD`, and the port should be 27017.
 
 **Step 6**: When you are done working, return to the terminal where you previously typed `docker compose up`. Press CONTROL + C to stop the containers. Then type
 ```
