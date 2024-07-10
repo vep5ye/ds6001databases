@@ -22,13 +22,18 @@ If you receive an error that `git` is not recognized on your computer, see the i
 cd ds6001databases
 ``` 
 
-**Step 5**: Create an ".env" file to store your passwords, API keys, and other sensitive information. On a Mac, open a new terminal or a new tab, make sure the working directory is still the "ds6001databases" folder. Then type
+**Step 5**: Install the packages you need (they are all listed in the requirements.txt file) by typing: 
+```
+pip install -r requirements.txt
+```
+
+**Step 6**: Create an ".env" file to store your passwords, API keys, and other sensitive information. On a Mac, open a new terminal or a new tab, make sure the working directory is still the "ds6001databases" folder. Then type
 ```
 touch .env
 ```
 On Windows, open Notepad and create a new document. Then click FILE -> Save AS. Under File as Type select "All files". Click through the file window to your "ds6001databases" folder, and save the file as `.env` (it begins with the period, and contains no spaces)
 
-**Step 6**: Open the `.env` file. On Windows, your file should be open already as a result of Step 5, and on Mac type `open .env`. Inside the .env file, paste the following
+**Step 7**: Open the `.env` file. On Windows, your file should be open already as a result of Step 5, and on Mac type `open .env`. Inside the .env file, paste the following
 ```
 POSTGRES_PASSWORD=password1
 MONGO_INITDB_ROOT_PASSWORD=password2
@@ -39,19 +44,19 @@ MONGO_INITDB_ROOT_USERNAME=mongo
 ```
 On the first three lines, change `password1`, `password2`, and `password3` to anything you like (but please do not use the @ symbol as that causes problems for some packages). Leave the 4th, 5th, and 6th lines alone. Then SAVE the .env file.
 
-**Step 7**: Download and install the Docker desktop client for your operating system, here: https://www.docker.com/products/docker-desktop/. Once the Docker desktop is installed, open it on your local computer. 
+**Step 8**: Download and install the Docker desktop client for your operating system, here: https://www.docker.com/products/docker-desktop/. Once the Docker desktop is installed, open it on your local computer. 
 
-**Step 8**: In the terminal, type
+**Step 9**: In the terminal, type
 ```
 docker compose up
 ```
 If successful, you will see a large amount of output from JupyterLab, MySQL, PostgreSQL, and Mongo. If you see a "docker daemon" error, then double-check that the Docker desktop client is running.
 
-**Step 9**: Launch JupyterLab, VS Code, or another Python IDE on your computer. 
+**Step 10**: Launch JupyterLab, VS Code, or another Python IDE on your computer. 
 
-**Step 10**: Open the `db_tests.ipynb` file. This notebook contains code that will check whether the MySQL, PostgreSQL, and MongoDB database systems we will explore in this course are operating as expected. Run all cells in this notebook. If there are errors, contact the instructor or see the Troubleshooting section below.
+**Step 11**: Open the `db_tests.ipynb` file. This notebook contains code that will check whether the MySQL, PostgreSQL, and MongoDB database systems we will explore in this course are operating as expected. Run all cells in this notebook. If there are errors, contact the instructor or see the Troubleshooting section below.
 
-**Step 11**: Return to the terminal where you previously typed `docker compose up`. Press CONTROL + C to stop the container. Then type
+**Step 12**: Return to the terminal where you previously typed `docker compose up`. Press CONTROL + C to stop the container. Then type
 ```
 docker compose down
 ```
