@@ -1,0 +1,11 @@
+patient_name,date_of_birth,prescribed_drug,prior_conditions,patient_sex,patient_insurance,drug_maker,drug_cost,prescribing_physician,physician_medschool,physician_years_experience,hospital,hospital_location
+Nkemdilim Arendonk,2/21/1962,Amoxil,"[Pneumonia, Diabetes, Rubella]",M,Aetna,USAntibiotics,14.62,Earnest Caro,University of California (Irvine),14,UPMC Presbyterian Shadyside,"Pittsburgh, PA"
+Nkemdilim Arendonk,2/21/1962,Micronase,"[Pneumonia, Diabetes, Rubella]",M,Aetna,Pfizer,20.55,Earnest Caro,University of California (Irvine),14,UPMC Presbyterian Shadyside,"Pittsburgh, PA"
+Raniero Coumans,8/15/1990,Zosyn,"[Appendicitis, Crohn's disease, Mononucleosis]",M,Cigna,Baxter International Inc,394,Pamela English,University of Michigan,29,Northwestern Memorial Hospital,"Chicago, IL"
+Raniero Coumans,8/15/1990,Humira,"[Appendicitis, Crohn's disease, Mononucleosis]",M,Cigna,Abbvie,7000,Samantha Bergerson,Johns Hopkins University,10,Northwestern Memorial Hospital,"Chicago, IL"
+Mizuki Debenham,3/12/1977,Inlyta,[Kidney Cancer],F,Kaiser Permanente,Pfizer,21644,Lewis Conti,North Carolina State University,8,Houston Methodist Hospital,"Houston, TX"
+Zoë De Witt,11/23/1947,Atenolol,"[Cardiomyopathy, Diabetes, Sciatica, Shingles]",F,Medicare,Mylan Pharmaceuticals,10.58,Theresa Dahlmans,Lake Erie College of Medicine,17,Mount Sinai Hospital,"New York, NY"
+Zoë De Witt,11/23/1947,Micronase,"[Cardiomyopathy, Diabetes, Sciatica, Shingles]",F,Medicare,Pfizer,20.55,Hilde Ali,Colorado University Boulder,11,Mount Sinai Hospital,"New York, NY"
+Zoë De Witt,11/23/1947,Demerol,"[Cardiomyopathy, Diabetes, Sciatica, Shingles]",F,Medicare,Pfizer,37.5,Hilde Ali,Colorado University Boulder,11,Mount Sinai Hospital,"New York, NY"
+Bonnie Hooper,7/4/1951,Xeloda,"[Pancreatic Cancer, Sciatica]",F,Blue Cross Blue Shield,Genentech,860,Steven Garbutt,Ohio State University,36,UCSF Medical Center,"San Francisco, CA"
+Bonnie Hooper,7/4/1951,Demerol,"[Pancreatic Cancer, Sciatica]",F,Blue Cross Blue Shield,Pfizer,37.5,Steven Garbutt,Ohio State University,36,UCSF Medical Center,"San Francisco, CA"
