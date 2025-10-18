@@ -1,0 +1,54 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table works {
+  workid varchar
+  title varchar
+  longtitle varchar
+  date int
+  genretype varchar
+  notes float
+  source varchar
+  totalwords int
+  totalparagraphs int
+}
+
+Table characters {
+  charid varchar
+  charname varchar
+  abbrev varchar
+  description varchar
+  speechcount float
+}
+
+Table paragraphs {
+  workid varchar
+  paragraphid varchar
+  paragraphnum varchar
+  charid varchar
+  plaintext varchar
+  phonetictext varchar
+  stemtext varchar
+  charcount float
+  wordcount float
+  chapterid float
+}
+
+Table chapters {
+  workid varchar
+  chapterid float
+  section float
+  chapter float
+  description varchar
+}
+
+Table charworks {
+  charid varchar
+  workid varchar
+}
+
+Ref: works.workid < chapters.workid
+Ref: chapters.chapterid < paragraphs.chapterid
+Ref: characters.charid < paragraphs.charid
+Ref: works.workid < charworks.workid
+Ref: characters.charid < charworks.charid
